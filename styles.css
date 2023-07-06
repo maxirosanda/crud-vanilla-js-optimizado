@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.template-form{
+    display: flex;
+    width: 480px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.template-form input{
+    padding: 5px 10px;
+
+}
+.template-form button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.message{
+    width: 200px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: -300px;
+    right: 30px;
+    opacity: 1;
+    animation: show 3s forwards  ;
+}
+
+@keyframes show {
+    0%{
+        top: -300px;
+        opacity: 1;
+    }
+    50%{
+        top: 30px;
+        opacity: 1;
+    }
+    100%{
+        top: 30px;
+        opacity: 0;
+    }
+    
+}
+.popup{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.758);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup .info{
+    width: 300px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.popup .info button{
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
